@@ -1,0 +1,331 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Generics */
+body {
+  font-family: sans-serif;
+}
+button{
+  border: none;
+  cursor: pointer;
+}
+
+/* Utils */
+.wave{
+  margin: 0 auto;
+  filter: saturate(0%);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.row-reverse {
+  flex-direction: row-reverse;
+}
+
+/*.debug .border {
+  border: 2px dashed black;
+}*/
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-gray {
+  background-color: rgb(211, 211, 211);
+}
+
+header {
+  background-color: rgb(101, 121, 194);
+}
+
+/* # Navbar */
+
+.navbar {
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar > * {
+  padding: 10px;
+  flex-basis: 20%;
+  
+}
+
+.navbar-menu {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.navbar-menu p{
+  display: inline;
+  padding: 5px 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-actions {
+  text-align: right;
+}
+
+.navbar-actions button{
+  color: black;
+  background-color: white;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 30px;
+}
+/* # Jumbotron */
+
+.jumbotron {
+  padding: 50px;
+  height: 500px;
+  background-image: url(../img/jumbo.png);
+  background-size: contain;
+
+  display: flex;
+  justify-content: center;
+}
+
+.jumbotron .content {
+  width: 50%;
+  /* height: 100%; */
+  /* margin: 0 auto; */
+  
+}
+
+.jumbotron .content>*{
+  color: white;
+}
+
+.content h1{
+  line-height: 80px;
+  text-align: center;
+  font-size: 45px;
+  padding: 20px;
+}
+
+.content p{
+  text-align: center;
+  padding: 20px 0;
+}
+
+.content span{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.content-flex button{
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 15px;
+  border-radius: 30px;
+}
+
+.content-flex .dow-mac{
+  color: black;
+  background-color: white;
+
+}
+
+.content-flex .goto{
+  background-color: #23272a;
+  color: white;
+}
+/* # Main & sections */
+section {
+  padding: 50px;
+  min-height: 600px;
+}
+
+section > .container {
+  height: 100%;
+}
+
+main h2{
+  font-size: 45px;
+  padding: 20px 0;
+}
+
+main p{
+  font-size: 20px;
+    padding: 15px 0;
+}
+.flex > .small-col {
+  flex-basis: 40%;
+  padding: 20px 55px;
+  
+}
+
+.flex > .large-col {
+  flex-basis: 60%;
+  
+}
+
+.flex > .full-col {
+  flex-basis: 100%;
+  
+}
+
+
+
+
+.full-col{
+  text-align: center;
+  
+}
+
+#full-col-smal-title{
+  font-size: 35px;
+}
+
+.full-col .dow-mac{
+  color: white;
+  background-color:rgb(101, 121, 194);
+  padding: 15px 25px;
+  font-size: 15px;
+  border-radius: 30px;
+}
+/* # Footer */
+
+
+
+
+footer {
+  padding: 50px;
+  background-color: #23272a;
+  
+}
+
+
+
+.footer-top {
+  height: 600px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgb(101, 121, 194);
+
+  display: flex;
+}
+
+
+.footer-top .footer-left {
+  flex-basis: 30%;
+  ;
+  padding:15px 0;
+}
+
+
+
+
+footer h2{
+  font-size: 35px;
+  color: rgb(101, 121, 194);
+  margin-bottom: 20px;
+}
+
+
+
+.lang-info p{
+  display: inline-block;
+  font-size: 13px;
+  color: white;
+}
+.lang-info img{
+  height: 20px;
+  
+  vertical-align: middle;
+}
+.lang-info i{
+  font-size: 10px;
+  color: white;
+}
+
+
+
+.social-info{
+  margin-top: 15px;
+}
+
+.social-info i{
+  padding: 0 5px;
+  color: white;
+}
+.social-info i:first-of-type{
+  padding-left: 0px;
+}
+
+
+
+
+
+
+
+.footer-top .footer-right {
+  flex-basis: 70%;
+  
+}
+
+.footer-nav {
+  height: 100%;
+  display: flex;
+  /* background-color: #fff; */
+}
+
+.footer-nav > div {
+  flex-basis: 25%;
+}
+
+
+.nav-col p:first-of-type{
+  color: rgb(101, 121, 194);
+  padding-top: 20px;
+}
+
+.nav-col p{
+  color: white;
+  padding-bottom: 5px;
+  font-weight: 200;
+}
+
+
+
+
+
+
+
+
+
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+ 
+  margin: 0 -10px;
+}
+
+.footer-bottom button{
+  color: white;
+  background-color: rgb(101, 121, 194);
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.footer-bottom img{
+  height: 40px;
+}
