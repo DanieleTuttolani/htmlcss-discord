@@ -16,9 +16,18 @@ button{
 
 /* Utils */
 .wave{
-  margin: 0 auto;
   filter: saturate(0%);
+  margin: -5px auto;
+  filter: invert(96%) sepia(12%) saturate(101%) hue-rotate(314deg) brightness(87%) contrast(91%);
 }
+
+.wave-type2{
+  filter: saturate(0%);
+  margin: -5px auto;
+  filter: invert(96%) sepia(12%) saturate(101%) hue-rotate(314deg) brightness(87%) contrast(91%);
+  transform: rotate(180deg);
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
